@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <link rel="stylesheet" href="style.css" />
+    <title>Spotify Clone</title>
+  </head>
+  <body onload="pageLoad()">
+
+    <div class="connectApp">
+      <button id="connect">Connect</button>
+      <button onclick="logOut()" id="logout">LogOut</button>
+    </div> 
+
+     <div class="first_of_all_div">
+        <h1 class="first_h">How to Use This App</h1>
+       <div class="first_box_p_cont">
+        <p class="f_r">1. As soon as you click on the continue button First of all everything will be desbladed 
+          Which one has to be registered first?</p>
+        <p class="s_r">2. Once you have signed up and logged in, you will be able to access this app</p>
+        <p class="t_r">3. On the right side there is an option of Top Library which can be clicked to create a song of your choice.</p>
+     </div>
+     <div class="first_btn_con">
+      <button id="agree" class="button-30" role="button">Continue</button>
+     </div>
+       </div>
+
+    <div class="container">
+      <div class="library_cont">
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span></span>
+          </button>
+        </div>
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span></span>
+          </button>
+        </div>
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span> </span>
+          </button>
+        </div>
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span></span>
+          </button>
+        </div>
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span></span>
+          </button>
+        </div>
+        <div class="sont_items">
+          <button class="imp_click">
+            <img class="coverimg" alt="" />
+            <p></p>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_cont">
+      <div class="clone_box">
+        <div class="first-btns">
+          <button id="library">Library</button>
+        </div>
+        <div class="coverdefaultImg">
+          <img class="defaultImg" src="" alt="">
+        </div>
+        <div class="basic_info_songname">
+          <p id="defaulttext">Salam-e-Ishq</p><br>
+        </div>
+        <div class="basic_info_artistname">
+          <span id="song_artis_name"></span>
+        </div>
+        <div class="gif_con">
+          <img class="myGif" src="./Gif/playing.gif" alt="">
+        </div>
+        <div class="range_box">
+          <input type="range" id="seekbar" value="0">
+        </div>
+        
+     <div class="iicon__contai">
+      <div class="icons_cont">
+        <i class="fa-2x fas fa-backward previous disabled" ></i>
+        <i id="masterPlay" class="fa-2x fa-solid fa-play" ></i>
+        <i  class="fa-2x fas fa-forward next"></i>
+      </div><br>
+     </div>
+     <div class="getsys_volu">
+      <p id="show_volume"></p>
+      <input type="range" value="100" id="volume" onchange="change_volume()">
+    </div>
+      </div>
+    </div>
+
+    <div class="signupBox">
+      <h1>Sign Up</h1>
+
+
+    <label for="">Email</label><br>
+    <input type="email" id="signemail"/><br />
+    <p id="signmailerror"></p>
+    <label for="">Password</label><br>
+    <input type="password" id="signpass" required/><br>
+    <p id="signpasserror"></p>
+    <button id="sign">signUp</button>
+
+
+    </div>
+
+    <div class="loginupBox">
+      <h1>Login</h1>
+
+  <label for="">Email</label><br>
+  <input type="email" id="logemail"/><br />
+  <p id="logmailerror"></p>
+  <label for="">Password</label><br>
+  <input type="password" id="logpass"/><br>
+  <p id="logpasserror"></p>
+  <button id="login">Login</button>
+</form>
+
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

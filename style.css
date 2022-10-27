@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+  height: 100vh;
+  width: 100vw;
+  background: url("./back.webp") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+  /* ********** handle Complete Project ************ */
+
+  .container{
+    display: flex;
+  }
+
+   /* ***************** Main Box Styling ****************** */
+
+
+.clone_box{
+    height: 550px;
+    width: 350px;
+    background-color: black;
+    box-shadow: 5px 2px 25px 3px  rgb(10, 28, 35);
+    border-radius: 12px;
+    opacity: 0;
+    transition: all 3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 3vh;
+}
+
+.main_cont{
+    margin-left: 20vw;
+    margin-top: 10vh;
+}
+    /* ***************** Library Section Styling ***************** */
+
+.library_cont{
+    height: 100vh;
+    width: 300px;
+    position: absolute;
+    top: 0%;
+    background-color: white;
+    /* visibility: hidden; */
+    margin-left: -20rem;
+    box-shadow: 5px 2px 25px 3px  rgb(53, 51, 51);
+    overflow: scroll;
+    z-index: 1;
+    /* margin-top: -1vh; */
+}
+.blur{
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);    
+}
+.visibility{
+    margin-left: 0rem;
+    transition: all 1s ease;
+}
+
+     /* ************ Inner Box styling ************* */
+
+.first-btns{
+    display: flex;
+    position: relative;
+}
+#library{
+    position: absolute;
+    right: 0;
+}
+
+ /* ****************** Show Sign Up Box ****************** */
+ .signupBox{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(49, 46, 46);
+    box-shadow: 5px 2px 25px 3px  rgb(0, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    border-radius: 12px;
+ }
+ .signupBox h1{
+    text-align: center;
+    margin-top: 1vh;
+
+ }
+ .signupBox label{
+    margin-left: 1vw;
+    margin-top: 1vh;
+ }
+ .signupBox input{
+    margin-left: 1vw;
+    margin-top: 1vh;
+    outline: none;
+    border: 1px solid black;
+    width: 220px;
+ }
+ .signupBox button{
+    width: 100px;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    border-radius: 12px;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.2rem 0rem;
+ }
+ .signupBox button:hover{
+    background-color:  rgb(87, 73, 73);;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+ }
+  /* ***************** Login box styling ****************** */
+
+  .loginupBox{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(49, 46, 46);
+    box-shadow: 5px 2px 25px 3px  rgb(0, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    border-radius: 12px;
+  }
+  .loginupBox h1{
+    text-align: center;
+    margin-top: 1vh;
+  } 
+
+  .loginupBox label{
+    margin-left: 1vw;
+    margin-top: 1vh;
+ }
+ .loginupBox input{
+    margin-left: 1vw;
+    margin-top: 1vh;
+    outline: none;
+    border: 1px solid black;
+    width: 220px;
+ }
+ .loginupBox button{
+    width: 100px;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    border-radius: 12px;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.2rem 0rem;
+ }
+ .loginupBox button:hover{
+    background-color:  rgb(87, 73, 73);;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+  /* ************ library item design *************** */
+
+ .sont_items{
+    display: flex;
+    flex-direction: column;
+}
+
+ /* ************* styling cover images **************** */
+.coverimg{
+   height: 130px;
+   width: 130px;
+}
+.imp_click{
+   cursor: pointer;
+   background-color: aquamarine;
+   border: none;
+   outline: none;
+}
+
+/* ************ Styling Default Images ************* */
+.coverdefaultImg{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.defaultImg{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+    /* **************** Basic Info *************** */
+
+.basic_info_songname{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 7vh;
+}
+.basic_info_artistname{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 2vh;
+}
+
+/* *************** range Box ************** */
+.range_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.range_box input{
+    width: 250px;
+}
+
+ /* ************ font icons *********** */
+ .iicon__contai{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+ }
+ .fa-forward{
+    margin-left: 1vw;
+ }
+ .fa-backward{
+    margin-right: 1vw;
+ }
+
+
+ /* ****************** first_of_all_div ******************* */
+ .first_of_all_div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    color: #fff;
+    opacity: 2;
+    margin-top: -100vh;
+    transition: all 2s ease-in-out;
+ }
+ .first_box_p_cont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .first_box_p_cont .f_r,.s_r,.t_r {
+    font-weight: 400;
+    margin-top: 10vh;
+    font-size: 18px;
+
+ }
+ .first_h{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 2rem;
+ }
+ .first_btn_con{
+    display: flex;
+    justify-content: right;
+    margin-top: 15vh;
+ }
+
+
+#disagree{
+    margin-left: 33vw;
+}
+
+
+/* ******** blur clone box ***************** */
+
+.connectApp{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.blur_clone{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#connect{
+    display: none;
+}
+
+.rotate{
+    animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .gif_con{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    transition: all 2s ease-in-out;
+  }
+  .myGif{
+    height: 20px;
+    width: 50px;
+    opacity: 0;
+  }
+
+  #connect {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: absolute;
+    left: 37%;
+    transform: translate(-50%);
+    z-index: 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-left: 13vw;
+}
+#logout{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+#agree{
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  margin-right: 10vw;
+}
+
+#connect:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+#logout:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+#agree:before{
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+#connect:active {
+    color: #000
+}
+#logout:active {
+    color: #000
+}
+#agree:active{
+  color: #000
+}
+#connect:active:after {
+    background: transparent;
+}
+#logout:active:after {
+    background: transparent;
+}
+#agree:active:after {
+    background: transparent;
+}
+
+#connect:hover:before {
+    opacity: 1;
+}
+#agree:hover:before {
+    opacity: 1;
+}
+#logout:hover:before {
+    opacity: 1;
+}
+
+#connect:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+#agree:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+#logout:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* **************** Library Button Styling **************** */
+#library{
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  margin-top: 1vh;
+  margin-right: 2vw;
+  font-size: 22px;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(98 100% 62%),  hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#logout{
+    visibility: hidden;
+}
+
+
+ /* **************** Custom Audio *************** */
+ .custom_div{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(49, 46, 46);
+    box-shadow: 5px 2px 25px 3px  rgb(0, 0, 0);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    border-radius: 12px;
+    z-index: 2;
+ }
+
+ #song_artis_name{
+    visibility: hidden;
+ }
+
+
+input:in-range{
+    cursor: pointer;
+}
+.getsys_volu{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#seekbar{
+    background-color: yellow;
+    color: yellow;
+}
+
+/* ****************** Mail Errors ******************* */
+#signmailerror , 
+#signpasserror , 
+#logmailerror ,
+ #logpasserror{
+   color: red;
+   margin-left: 3vw;
+}
